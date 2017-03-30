@@ -9,6 +9,7 @@
 #import "NSString+NSReplace.h"
 
 @implementation NSString (NSReplace)
+//在srcStr字符串中查找sStr字符串，并替换成destStr字符串
 + (NSString *)sourceStr:(NSString *)destStr replaceStr:(NSString *)sStr fromSrcStr:(NSString *)srcStr{
 	NSRange range;
 	
@@ -25,6 +26,8 @@
 	}
 	return str;
 }
+
+//去掉字符串中的空格
 + (NSString *)trim:(NSString *)textStr{
 	if (textStr == nil ) {
         return nil;
